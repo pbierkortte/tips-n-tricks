@@ -1,6 +1,9 @@
 # How to setup Git
 
 ```sh
+# Install/Update Git
+sudo apt install git -y
+
 # User Input
 read -p 'User Name ("Your Name"): ' userName
 
