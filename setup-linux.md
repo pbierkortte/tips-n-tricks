@@ -1,14 +1,14 @@
 # How to setup Git
 
 ```sh
-# Install Git
-if ! [ -x "$(command -v git)" ]; then     sudo apt install git -y; fi
-
 # User Input
 read -p 'User Name ("Your Name"): ' userName
 
 # Email Input
 read -p 'Email Address (you@example.com): ' userEmail
+
+# Install Git
+if ! [ -x "$(command -v git)" ]; then     sudo apt install git -y; fi
 
 # Setup Identity
 git config --global user.name "$userName"
