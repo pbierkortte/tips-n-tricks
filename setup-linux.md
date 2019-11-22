@@ -1,3 +1,7 @@
+<div >
+    <img src="Git-Logo-2Color.png" align="center" height=100px>
+</div>
+
 # How to setup Git
 
 ```sh
