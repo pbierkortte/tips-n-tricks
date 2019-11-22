@@ -31,7 +31,7 @@ ip link set dev DEVICENAMEHERE
 ip link set dev DEVICENAMEHERE address NEWMACADDRESSHERE
 ```
 
-8. Restart the device, appling the new MAC address
+8. Restart the device, applying the new MAC address
 ```bash
 ip link set dev DEVICENAMEHERE up
 ```
