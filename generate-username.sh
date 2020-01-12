@@ -29,3 +29,6 @@ generate-username(){
   a=$(shuf -er -n1 {a..z} | tr -d '\n')
   echo ${a}${z}
 }
+
+
+generate-username $1
