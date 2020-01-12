@@ -10,7 +10,7 @@ IFS=$'\n\t'
 #  Rational:
 #    * At least 9 characters
 #    * Default MaxLength = 16
-*    * Random length unless specified
+#    * Random length unless specified
 #    * Contain only digits and lowercase letters
 #    * Start with a letter
 #    * Contain aleast one number
