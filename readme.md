@@ -5,3 +5,5 @@
 [Randomize MAC address on Linux](randomize-mac-address-on-linux.md)
 
 [Recursive SHA256SUM](recursive-sha256sum.md)
+
+[Generate a random username](generate-username.sh)
