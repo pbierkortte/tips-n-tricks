@@ -31,4 +31,4 @@ generate-username(){
 }
 
 
-generate-username $1
+generate-username $@
