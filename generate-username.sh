@@ -29,7 +29,7 @@ generate-username(){
   alpha=`echo -n {a..z} | tr -d 'lo ' | fold -w1`
   d=`shuf -e -n1 ${digit}`
   a=`shuf -e -n1 ${alpha}`
-  word=`echo -n {a..z} {0..9} | tr -d "12lo$d$a " | fold -w1`
+  word=`echo -n {0..9} {a..z} | tr -d "12lo$d$a " | fold -w1`
   w=`shuf -e -n${wLength} ${word}`
   z=`echo "${d}${w}" | fold -w1 | shuf`
   echo "$(echo "${a}${z}" | tr -d "\n")"
