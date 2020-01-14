@@ -27,14 +27,14 @@ IFS=$'\n\t'
 generate-username(){
   minLength="${1:-9}"
   maxLength="${1:-16}"
-  avoid="iloz"
+  avoid="iloz "
   length=`shuf -n1 -i ${minLength}-${maxLength}`
   wLength="$((length-2))"
-  digit=`echo -n {0..9} | tr -d "${avoid} " | fold -w1`
-  alpha=`echo -n {a..z} | tr -d "${avoid} " | fold -w1`
+  digit=`echo -n {0..9} | tr -d "${avoid}" | fold -w1`
+  alpha=`echo -n {a..z} | tr -d "${avoid}" | fold -w1`
   d=`shuf -e -n1 ${digit}`
   a=`shuf -e -n1 ${alpha}`
-  word=`echo -n {0..9} {a..z} | tr -d "${avoid}${d}${a} " | fold -w1`
+  word=`echo -n {0..9} {a..z} | tr -d "${avoid}${d}${a}" | fold -w1`
   w=`shuf -e -n${wLength} ${word}`
   z=`echo "${d}${w}" | fold -w1 | shuf`
   echo "$(echo "${a}${z}" | tr -d "\n")"
