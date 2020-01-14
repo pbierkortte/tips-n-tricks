@@ -16,6 +16,11 @@ IFS=$'\n\t'
 #    * Contain only digits and lowercase letters
 #    * Avoid ambiguous characters "1","2","l","o"
 #
+#  Test Examples:
+#    $ seq 10 | xargs -Iz -P8 ./generate-username.sh   | sort
+#    $ seq 10 | xargs -Iz -P8 ./generate-username.sh 2 | sort
+#    $ seq 10 | xargs -Iz -P8 ./generate-username.sh 5 | sort
+#
 ################################################################################
 
 
