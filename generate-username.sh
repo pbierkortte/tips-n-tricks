@@ -14,7 +14,7 @@ IFS=$'\n\t'
 #    * Fixed length if argument specified
 #    * No repeated characters, so max length of 32
 #    * Contain only digits and lowercase letters
-#    * Avoid ambiguous characters "i","l","o","z"
+#    * Avoid ambiguous letters "i","l","o","z"
 #
 #  Test Examples:
 #    $ seq 10 | xargs -Iz -P8 ./generate-username.sh   | sort
