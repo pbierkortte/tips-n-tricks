@@ -5,17 +5,16 @@ IFS=$'\n\t'
 
 ################################################################################
 #  Usage:  ./generate-username.sh
-#     or:  ./generate-username.sh [Length]
+#     or:  ./generate-username.sh [FixedLength]
 #
 #  Rational:
-#    * At least 9 characters
-#    * Default MaxLength = 16
-#    * Random length unless specified
-#    * Contain only digits and lowercase letters
 #    * Start with a letter
 #    * Contain aleast one number
+#    * Default length random between 9 and 16 characters 
+#    * Fixed length if argument specified
+#    * No repeated characters, so max length of 32
+#    * Contain only digits and lowercase letters
 #    * Avoid ambiguous characters "1","2","l","o"
-#    * No repeated characters
 #
 ################################################################################
 
