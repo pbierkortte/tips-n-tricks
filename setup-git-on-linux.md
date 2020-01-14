@@ -18,6 +18,9 @@ if ! [ -x "$(command -v git)" ]; then     sudo apt install git -y; fi
 git config --global user.name "$userName"
 git config --global user.email "$userEmail"
 
+# Use nano editor
+git config --global core.editor "nano -w"
+
 # Only push current branch
 git config --global push.default simple
 
