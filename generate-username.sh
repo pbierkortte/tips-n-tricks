@@ -16,7 +16,7 @@ IFS=$'\n\t'
 #    * Contain aleast one number
 #    * Avoid ambiguous characters "1","2","l","o"
 #    * No repeated characters
-#  
+#
 ################################################################################
 
 
