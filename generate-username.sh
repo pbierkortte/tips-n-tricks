@@ -10,7 +10,7 @@ IFS=$'\n\t'
 #  Rational:
 #    * Start with a letter
 #    * Contain aleast one number
-#    * Default length random between 9 and 16 characters 
+#    * Default length random between 9 and 16 characters
 #    * Fixed length if argument specified
 #    * No repeated characters, so max length of 32
 #    * Contain only digits and lowercase letters
