@@ -1,8 +1,8 @@
-get-adgroup -filter { Name -like "*" } | 
+get-adgroup -Filter { Name -like "*" } | 
 foreach {
     write-host $_.name
     get-adgroupmember $_ | 
     foreach {
-        write-host " -> "$_.samaccountname
+        Write-Host " -> "$_.samaccountname
     }
 }
