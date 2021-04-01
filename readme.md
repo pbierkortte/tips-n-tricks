@@ -9,3 +9,5 @@
 [Generate a random username](generate-username.sh)
 
 [AD Group Members](get-ad-group-members.ps1)
+
+[For a list computers, get the Local Administrators without using elevated privileges](get-local-admins.ps1)
