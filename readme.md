@@ -12,4 +12,4 @@
 
 [Local Administrators without using elevated privileges](get-local-admins.ps1)
 
-[Verify redirect URLs](verify-redirect-urls.sh)
+[Check redirect URLs](check-redirect-urls.sh)
