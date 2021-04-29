@@ -11,3 +11,5 @@
 [AD Group Members](get-ad-group-members.ps1)
 
 [Local Administrators without using elevated privileges](get-local-admins.ps1)
+
+[Verify redirect URLs](verify-redirect-urls.sh)
