@@ -1,1 +1,1 @@
-echo; for url in `cat urls.txt`; do echo -en "$url "; curl -Ls -o /dev/null -w %{url_effective} "$url";echo ; done | column -t -s' '
+xargs -a urls.txt curl -so /dev/null -w '%{url} %{http_code} %{redirect_url}\n' | column -t -s' ' | sort
