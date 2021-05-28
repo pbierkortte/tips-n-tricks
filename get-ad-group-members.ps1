@@ -1,4 +1,4 @@
-get-adgroup -filter { Name -like "*" } | 
+get-adgroup -filter { Name -like "*IT*" } | 
 foreach {
     write-host $_.name
     get-adgroupmember $_ | 
