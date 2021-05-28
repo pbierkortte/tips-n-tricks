@@ -3,15 +3,15 @@ $separator = "*" * 80
 [Environment]::UserName
 Get-Date
 
-foreach ($computername in $myList) {   
+foreach ($computerName in $myList) {   
     Write-Output $separator
     
-    [ADSI]$search  = "WinNT://$computername"
+    [ADSI]$search  = "WinNT://$computerName"
     
     $search.children.where({$_.class -eq 'group' -and $_.Name -eq 'Administrators'}) |
     
     Select `
-        @{Name="Computername";Expression={$_.Parent.split("/")[-1] }},
+        @{Name="ComputerName";Expression={$_.Parent.split("/")[-1] }},
         @{Name="GroupName";Expression={$_.name.value}},
         @{Name="Members";Expression={
             [ADSI]$group = "$($_.Parent)/$($_.Name),group"
@@ -20,5 +20,4 @@ foreach ($computername in $myList) {
                 $_.GetType().InvokeMember("Name", 'GetProperty', $null, $_, $null)
                 }) -join "; "
     }}
-
 }
