@@ -2,6 +2,11 @@
     <img src="Git-Logo-2Color.png" align="center" height=100px>
 </div>
 
+# Optional - Getting your existing configuration from another machine
+```sh
+git config --list
+```
+
 # How to setup Git
 
 ```sh
