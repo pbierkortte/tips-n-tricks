@@ -14,7 +14,7 @@ git config --list
 
 ### User Input
 ```bash
-read -p 'User Name ("Your Name"): ' userName
+read -p 'User Name ("Your Name"): ' yourName
 ```
 
 ### Email Input
@@ -29,7 +29,7 @@ if ! [ -x "$(command -v git)" ]; then     sudo apt install git -y; fi
 
 ### Setup Identity
 ```bash
-git config --global user.name "$userName"
+git config --global user.name "$yourName"
 git config --global user.email "$userEmail"
 ```
 
