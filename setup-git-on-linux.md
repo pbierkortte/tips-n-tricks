@@ -14,12 +14,12 @@ git config --list
 
 ### User Input
 ```bash
-read -p 'User Name ("Your Name"): ' yourName
+read -p 'Your Name (As you want it shown in the commit log): ' yourName
 ```
 
 ### Email Input
 ```bash
-read -p 'Email Address (you@example.com): ' userEmail
+read -p 'Email Address (123456789+USERNAME@users.noreply.github.com): ' userEmail
 ```
 
 ### Install Git
