@@ -18,4 +18,6 @@
 
 [Git cloning only one branch](git-cloning-only-one-branch.md)
 
+[Git create empty commit](git-empty-commit.md)
+
 <img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/kwna9ui6brx6p8gwb1ok" height="1" width="1"/>
