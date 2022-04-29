@@ -45,7 +45,7 @@ git config --global push.default simple
 
 ### Generate a new key pair
 ```bash
-ssh-keygen -t rsa -b 4096 -C "$userEmail" -P "" -f ~/.ssh/id_rsa
+ssh-keygen -t rsa -b 4096 -C "$(git config --global --get user.email)" -P "" -f ~/.ssh/id_rsa
 ```
 
 ### Start ssh in the background
