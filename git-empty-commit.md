@@ -5,5 +5,5 @@
 * Creating initial pull requests
 
 ```bash
-git commit --allow-empty --allow-empty-message
+git commit --allow-empty --allow-empty-message --no-edit
 ```
