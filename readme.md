@@ -22,4 +22,6 @@
 
 [Run commands as another user (sudo)](sudo.md)
 
+[Git cache credentials for 12 hours](git-credential-cache.md)
+
 <img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/kwna9ui6brx6p8gwb1ok" height="1" width="1"/>
