@@ -24,7 +24,7 @@ print $DBT_ENV_SECRET_GITHUB_TOKEN
 # Capture the token securely fron user input
 echo -n "Enter your GitHub token: "; read -s token
 
-# Capture the token securely fron user input
+# Capture the username fron user input
 echo -n "Enter your GitHub username: "; read username
 
 # Add token to keychain
