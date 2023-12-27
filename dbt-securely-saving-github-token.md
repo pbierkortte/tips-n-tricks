@@ -31,10 +31,14 @@ echo -n "Enter your GitHub username: "; read username; echo
 security add-generic-password -U -s github -a "$username" -w "$token"
 
 # Setup the token retrieval snippet
-retrieval_snippet="security find-generic-password -w -s github -a "$username
+retrieval_snippet='export DBT_ENV_SECRET_GITHUB_TOKEN=$(security find-generic-password -w -s github -a '$username')'
 
-# Add token to .zshrc file
-echo -e '\nexport DBT_ENV_SECRET_GITHUB_TOKEN=$('$retrieval_snippet')\n' >> ~/.zshrc
+# Add token to .zshrc file, if not already present.
+grep -q "$retrieval_snippet" ~/.zshrc
+if [ $? -ne 0 ]; then
+    echo "adding retrieval snippet to .zshrc"
+    echo -e "\n$retrieval_snippet\n" >> ~/.zshrc
+fi
 
 # Tail the last 3 lines of the zshrc file to show how the token is set.
 cat ~/.zshrc | tail -n 3
