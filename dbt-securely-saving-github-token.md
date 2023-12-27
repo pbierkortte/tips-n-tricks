@@ -48,18 +48,9 @@ echo $DBT_ENV_SECRET_GITHUB_TOKEN
 ```
 
 # Explanation
-This code is setting up authentication with GitHub using a personal access token. Here's what it's doing:
+This code is setting up authentication with GitHub using a personal access token. Storing the token securely in the keychain and exporting it only for the current user's shell, allows authenticating with GitHub without exposing the secret token in plain text.
 
-It first unsets any existing token stored in an environment variable. Then it prints that variable to confirm it's unset.
-
-It then prompts the user to enter their GitHub username and personal access token, reading them securely without echoing to the terminal.
-
-The token is stored in the macOS keychain using security, associated with the GitHub account name.
-
-It then sets up a snippet to retrieve the token from the keychain.
-
-This retrieval snippet is added to the user's .zshrc file, exporting the token into an environment variable.
-
-Finally, it tails the .zshrc to show how the token is being set on every new shell session.
-
-Storing the token securely in the keychain and exporting it only for the current user's shell, allows authenticating with GitHub without exposing the secret token in plain text.
+* It prompts the user to enter their GitHub username and personal access token, reading them securely without echoing to the terminal.
+* The token is stored in the MacOS keychain using security, associated with the GitHub account name.
+* It then sets up a snippet to retrieve the token from the keychain.
+* This retrieval snippet is added to the user's .zshrc file, exporting the token into an environment variable.
