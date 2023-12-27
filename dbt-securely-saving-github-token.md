@@ -27,7 +27,7 @@ echo -n "Enter your GitHub token: "; read -s token; echo
 # Capture the username fron user input
 echo -n "Enter your GitHub username: "; read username; echo
 
-# Add token to keychain
+# Save the token to keychain
 security add-generic-password -U -s github -a "$username" -w "$token"
 
 # Setup the token retrieval snippet
