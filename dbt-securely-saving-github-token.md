@@ -21,7 +21,7 @@ unset DBT_ENV_SECRET_GITHUB_TOKEN
 # Show that the token is unset
 print $DBT_ENV_SECRET_GITHUB_TOKEN
 
-# Capture the token securely fron user input
+# Capture the token securely from user input
 echo -n "Enter your GitHub token: "; read -s token
 
 # Capture the username fron user input
