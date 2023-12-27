@@ -33,7 +33,7 @@ security add-generic-password -U -s github -a "$username" -w "$token"
 # Setup the token retrieval snippet
 retrieval_snippet='export DBT_ENV_SECRET_GITHUB_TOKEN=$(security find-generic-password -w -s github -a '$username')'
 
-# Add token to .zshrc file, if not already present.
+# Add snippet to .zshrc file, if not already present.
 grep -q "$retrieval_snippet" ~/.zshrc
 if [ $? -ne 0 ]; then
     echo "adding retrieval snippet to .zshrc"
