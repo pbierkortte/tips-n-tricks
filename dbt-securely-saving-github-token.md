@@ -40,9 +40,6 @@ if [ $? -ne 0 ]; then
     echo -e "\n$retrieval_snippet\n" >> ~/.zshrc
 fi
 
-# Tail the last 3 lines of the zshrc file to show how the token is set.
-cat ~/.zshrc | tail -n 3
-
 # Restart zshell
 exec zsh
 
