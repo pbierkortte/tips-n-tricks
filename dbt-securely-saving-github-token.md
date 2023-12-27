@@ -19,7 +19,7 @@ Here is a bit of code for setting up a GitHub Personal Access Token to be used s
 unset DBT_ENV_SECRET_GITHUB_TOKEN
 
 # Show that the token is unset
-print $DBT_ENV_SECRET_GITHUB_TOKEN
+echo $DBT_ENV_SECRET_GITHUB_TOKEN
 
 # Capture the token securely from user input
 echo -n "Enter your GitHub token: "; read -s token
