@@ -28,4 +28,8 @@
 
 [Create a visual fingerprint (like randomart image)](visual_fingerprint.sh)
 
+## DBT (Data Build Tool)
+[# Securely set environment variables for local development with DBT packages](dbt-securely-saving-github-token.md)
+
+
 <img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/kwna9ui6brx6p8gwb1ok" height="1" width="1"/>
