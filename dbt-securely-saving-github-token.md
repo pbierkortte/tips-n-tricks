@@ -18,7 +18,7 @@ Here is a bit of code for setting up a GitHub Personal Access Token to be used s
 # Unset token (optional)
 unset DBT_ENV_SECRET_GITHUB_TOKEN
 
-# Show that the token is unset
+# Show that the token is unset (optional)
 echo $DBT_ENV_SECRET_GITHUB_TOKEN
 
 # Capture the token securely from user input
@@ -43,7 +43,7 @@ fi
 # Restart zshell
 exec zsh
 
-# Show that the token is set
+# Show that the token is set (optional)
 echo $DBT_ENV_SECRET_GITHUB_TOKEN
 ```
 
