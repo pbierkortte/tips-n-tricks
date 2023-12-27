@@ -22,10 +22,10 @@ unset DBT_ENV_SECRET_GITHUB_TOKEN
 echo $DBT_ENV_SECRET_GITHUB_TOKEN
 
 # Capture the token securely from user input
-echo -n "Enter your GitHub token: "; read -s token
+echo -n "Enter your GitHub token: "; read -s token; echo
 
 # Capture the username fron user input
-echo -n "Enter your GitHub username: "; read username
+echo -n "Enter your GitHub username: "; read username; echo
 
 # Add token to keychain
 security add-generic-password -U -s github -a "$username" -w "$token"
