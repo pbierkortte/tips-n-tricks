@@ -5,7 +5,7 @@ Whether it's confidential client data or passwords, there are times when you may
 To prevent a command from being recorded in the history, you can add a space before the command. For example, if you type a space at the beginning of the command, it will not be saved in the history file.
 
 ## Clear History
-Remove recent commands from the session history, run the following:
+Remove recent commands from the session history by running the following:
 ```bash
 history -c
 ```
