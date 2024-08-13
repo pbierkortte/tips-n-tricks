@@ -30,6 +30,8 @@
 
 [Manage command history](bash-history.md)
 
+[Merge PDF files](pdfunite.md)
+
 ## DBT (Data Build Tool)
 [Securely set environment variables for local development with DBT packages](dbt-securely-saving-github-token.md)
 
