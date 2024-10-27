@@ -8,7 +8,7 @@ Disabling YubiKey OTP (One-Time Password) functionality is beneficial if you fre
 #### No Impact To Other Functions
 Disabling OTP doesn't affect other YubiKey functions FIDO2, U2F, and TOTP capabilities remain active
 #### Enhanced Privacy
-Reduces the risk of accidentally leaking sensitive information through unintended OTP generation.
+Reduces the risk of accidentally leaking device id through unintended OTP generation.
 #### Reduced Embarrassment
 Stops your YubiKey from generating codes when unintentionally touched.
 
