@@ -32,6 +32,8 @@
 
 [Merge PDF files](pdfunite.md)
 
+[YubiKey OTP Disabling Guide](YubiKey-OTP-Disabling-Guide.md)
+
 ## DBT (Data Build Tool)
 [Securely set environment variables for local development with DBT packages](dbt-securely-saving-github-token.md)
 
