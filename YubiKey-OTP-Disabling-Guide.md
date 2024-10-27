@@ -5,14 +5,15 @@
 Disabling YubiKey OTP (One-Time Password) functionality is beneficial if you frequently experience accidental triggers, especially with models like the Nano that remain inserted in USB ports. This change allows for more controlled use of your YubiKey while still leveraging its robust security features for authentication.
 
 ### Benefits of Disabling OTP
-* **Prevents Accidental Activation**: Stops your YubiKey from generating codes when unintentionally touched.
-* **Enhanced Privacy**: Reduces the risk of accidentally leaking sensitive information through unintended OTP generation.
-* **Reduced Embarrassment**: Avoids situations where unwanted OTP codes are generated and transmitted unexpectedly.
-* **Improved Security**: Minimizes potential privacy risks associated with accidental OTP generation.
+#### No Impact To Other Functions
+Disabling OTP doesn't affect other YubiKey functions FIDO2, U2F, and TOTP capabilities remain active
+#### Enhanced Privacy
+Reduces the risk of accidentally leaking sensitive information through unintended OTP generation.
+#### Reduced Embarrassment
+Stops your YubiKey from generating codes when unintentionally touched.
 
-### Understanding the Risks
-#### Privacy Implications
-##### Device ID Leakage
+### Privacy Implications
+#### Device ID Leakage
 Each OTP contains a unique device ID that:
 - Remains constant across all codes
 - Can be used for device tracking
@@ -25,15 +26,6 @@ Particularly important for:
 - Privacy advocates
 - Individuals requiring anonymity
 - Those working with sensitive information
-
-
-### Additional Considerations
-#### Impact on Other YubiKey Functions
-- Disabling OTP doesn't affect other YubiKey functions
-- FIDO2, U2F, and PIV capabilities remain active
-- Changes persist across different computers
-- Configuration survives power cycles
-
 
 ## Install
 ### Prerequisites
@@ -74,6 +66,4 @@ ykman config usb --disable otp
 5. Find the "OTP" application and click on it
 6. Click the "Disable" button
 7. Confirm the action when prompted
-
-
 
