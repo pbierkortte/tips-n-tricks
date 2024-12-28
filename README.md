@@ -4,6 +4,8 @@
 
 [Randomize MAC address on Linux](randomize-mac-address-on-linux.md)
 
+[Increase Swap Size on Ubuntu](increase-swap-ubuntu.md)
+
 [Recursive SHA256SUM](recursive-sha256sum.md)
 
 [Generate username](generate-username.sh)
