@@ -4,7 +4,7 @@
 
 [Randomize MAC address on Linux](randomize-mac-address-on-linux.md)
 
-[Increase Swap Size on Ubuntu](ubuntu-swap-file.md)
+[Managing Swap File on Ubuntu](ubuntu-swap-file.md)
 
 [Recursive SHA256SUM](recursive-sha256sum.md)
 
