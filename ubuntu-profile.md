@@ -1,6 +1,6 @@
 # Profile Configuration Guide
 
-The `~/.profile` file in Linux/Ubuntu is a shell script that runs when you log in. It's particularly useful for setting up your environment with custom configurations, PATH modifications, and automated tasks that should run at login.This makes it the ideal place for personalizing your environment and automating routine tasks.
+The `~/.profile` file in Linux/Ubuntu is a shell script that runs when you log in. It's particularly useful for setting up your environment with custom configurations, PATH modifications, and automated tasks that should run at login. This makes it the ideal place for personalizing your environment and automating routine tasks.
 
 ## Understanding .profile
 
