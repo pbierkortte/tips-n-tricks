@@ -36,6 +36,8 @@
 
 [YubiKey OTP Disabling Guide](YubiKey-OTP-Disabling-Guide.md)
 
+[Profile Configuration Guide](ubuntu-profile.md)
+
 ## DBT (Data Build Tool)
 [Securely set environment variables for local development with DBT packages](dbt-securely-saving-github-token.md)
 
