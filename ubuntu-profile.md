@@ -12,9 +12,19 @@ The `~/.profile` file in Linux/Ubuntu is a shell script that runs when you log i
   - Running login-time scripts
   - Setting up custom functions
 
-## Handling ~/.bash_profile or ~/.bash_login
+## Understanding ~/.bash_profile vs ~/.bash_login
 
-If you have a `~/.bash_profile` or `~/.bash_login` file, bash won't read `~/.profile` by default. To ensure your `.profile` is always sourced, add this to your `~/.bash_profile` or `~/.bash_login`:
+Bash follows this specific order when looking for login shell initialization files:
+1. `~/.bash_profile` - Checked first, if found, others are ignored
+2. `~/.bash_login` - Checked only if .bash_profile doesn't exist
+3. `~/.profile` - Checked only if neither of the above exist
+
+This means:
+- If `~/.bash_profile` exists, both `~/.bash_login` and `~/.profile` are ignored
+- If `~/.bash_profile` doesn't exist but `~/.bash_login` does, `~/.profile` is ignored
+- `~/.profile` is only read if neither of the above exist
+
+To ensure your `.profile` is always sourced, add this to your `~/.bash_profile` (or `~/.bash_login` if using that instead):
 
 ```bash
 # Source .profile if it exists
