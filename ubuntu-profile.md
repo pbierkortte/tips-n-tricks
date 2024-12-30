@@ -29,7 +29,7 @@ To ensure your `.profile` is always sourced, add this to your `~/.bash_profile` 
 ```bash
 # Source .profile if it exists
 if [ -f "$HOME/.profile" ]; then
-    . "$HOME/.profile"
+    source "$HOME/.profile"
 fi
 ```
 
