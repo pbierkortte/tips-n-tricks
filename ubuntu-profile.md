@@ -1,4 +1,4 @@
-# Linux Profile Customization Guide
+# Profile Customization Guide
 
 The `~/.profile` file in Linux/Ubuntu is a shell script that runs when you log in. It's particularly useful for setting up your environment with custom configurations, PATH modifications, and automated tasks that should run at login.
 
@@ -20,8 +20,6 @@ Here's a useful example of how to add automatic permission management to your `~
 ########################################################
 #
 # Automatic Permission Management
-#
-# Note: Add these functions to ~/.profile and they'll run on each login
 #
 function secure_folder() {
     chmod 700 "$1"
