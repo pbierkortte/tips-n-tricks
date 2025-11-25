@@ -1,8 +1,10 @@
 #!/bin/bash
 
-rm -rf .git
-git init
-git add .
+git log --oneline --all
+git checkout --orphan new-master
+git add -A
 git commit -m "Initial commit"
-git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPO>.git
-git push -u --force origin master
+git branch -D master
+git branch -m master
+git push -f origin master
+git log --oneline --all
